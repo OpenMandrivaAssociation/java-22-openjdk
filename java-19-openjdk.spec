@@ -21,7 +21,7 @@
 
 %define major %(echo %{version} |cut -d. -f1)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define minor 1
+%define minor 3
 %define is_head 1
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
@@ -141,6 +141,11 @@ Provides:	java-gui-current = %{EVRD}
 # So we have to require one of the compatibility provides of
 # the main package instead.
 Requires:	java-%{major}-openjdk-headless = 1:%{version}-%{release}
+# We need the exact version, not the jmod(*) bits that
+# may also be provided by other OpenJDK versions
+Requires:	%{name}-module-java.datatransfer = %{EVRD}
+Requires:	%{name}-module-java.prefs = %{EVRD}
+Requires:	%{name}-module-java.xml = %{EVRD}
 # For compatibility with JPackage/Fedora/Mageia packaging
 Provides:	java-%{major}-openjdk = %{EVRD}
 Provides:	java-openjdk = %{EVRD}
