@@ -21,7 +21,7 @@
 
 %define major %(echo %{version} |cut -d. -f1)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define minor 3
+%define minor 7
 %define is_head 1
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
