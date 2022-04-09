@@ -21,7 +21,7 @@
 
 %define major %(echo %{version} |cut -d. -f1)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define minor 7
+%define minor 17
 %define is_head 1
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
@@ -433,7 +433,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.ci.jmod
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.compiler.jmod
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.compiler.management.jmod
-%{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.jvmstat.jmod
 %{_jvmdir}/java-%{major}-openjdk/bin/jar
 %{_jvmdir}/java-%{major}-openjdk/bin/jarsigner
 %{_jvmdir}/java-%{major}-openjdk/bin/javac
