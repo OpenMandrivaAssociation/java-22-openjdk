@@ -504,7 +504,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.editpad
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.hotspot.agent
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.httpserver
-%doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.incubator.foreign
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.ed
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.jvmstat
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.le
@@ -582,7 +581,7 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %modpackage jdk.editpad
 %modpackage jdk.hotspot.agent
 %modpackage jdk.httpserver
-%modpackage jdk.incubator.foreign
+%modpackage jdk.incubator.concurrent
 %modpackage jdk.incubator.vector
 %modpackage jdk.jartool
 %modpackage jdk.javadoc
