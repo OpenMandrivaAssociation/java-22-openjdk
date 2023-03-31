@@ -33,7 +33,7 @@
 
 Name:		java-21-openjdk
 Version:	21.0.0.%{subminor}
-Release:	1
+Release:	2
 Summary:	Java Runtime Environment (JRE) %{major}
 Group:		Development/Languages
 License:	GPLv2, ASL 1.1, ASL 2.0, LGPLv2.1
