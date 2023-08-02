@@ -22,8 +22,8 @@
 %define major %(echo %{version} |cut -d. -f1)
 %define minor %(echo %{version} |cut -d. -f2-3)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define subminor 11
-%define is_head 1
+%define subminor 33
+#define is_head 1
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
 # to determine the previous version to get build dependencies
@@ -358,6 +358,7 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/lib/libjsig.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libjsound.so
 %{_jvmdir}/java-%{major}-openjdk/lib/liblcms.so
+%{_jvmdir}/java-%{major}-openjdk/lib/lible.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libmanagement_agent.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libmanagement_ext.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libmanagement.so
@@ -577,7 +578,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %modpackage jdk.editpad
 %modpackage jdk.hotspot.agent
 %modpackage jdk.httpserver
-%modpackage jdk.incubator.concurrent
 %modpackage jdk.incubator.vector
 %modpackage jdk.jartool
 %modpackage jdk.javadoc
