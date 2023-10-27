@@ -428,8 +428,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.le.jmod
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.opt.jmod
 %{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.ci.jmod
-%{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.compiler.jmod
-%{_jvmdir}/java-%{major}-openjdk/jmods/jdk.internal.vm.compiler.management.jmod
 %{_jvmdir}/java-%{major}-openjdk/bin/jar
 %{_jvmdir}/java-%{major}-openjdk/bin/jarsigner
 %{_jvmdir}/java-%{major}-openjdk/bin/javac
@@ -507,8 +505,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.opt
 %ifnarch %{ix86} %{arm}
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.vm.ci
-%doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.vm.compiler.management
-%doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.vm.compiler
 %endif
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.jartool
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.javadoc
