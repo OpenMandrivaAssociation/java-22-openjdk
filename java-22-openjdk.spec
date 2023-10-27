@@ -369,6 +369,7 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/lib/librmi.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libsaproc.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libsctp.so
+%{_jvmdir}/java-%{major}-openjdk/lib/libsimdsort.so
 %ifarch %{x86_64}
 %{_jvmdir}/java-%{major}-openjdk/lib/libjsvml.so
 %endif
@@ -497,6 +498,8 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.crypto.ec
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.dynalink
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.editpad
+%doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.graal.compiler
+%doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.graal.compiler.management
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.hotspot.agent
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.httpserver
 %doc %{_jvmdir}/java-%{major}-openjdk/legal/jdk.internal.ed
@@ -573,6 +576,8 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %modpackage jdk.dynalink
 %modpackage jdk.editpad
 %modpackage jdk.hotspot.agent
+%modpackage jdk.graal.compiler
+%modpackage jdk.graal.compiler.management
 %modpackage jdk.httpserver
 %modpackage jdk.incubator.vector
 %modpackage jdk.jartool
