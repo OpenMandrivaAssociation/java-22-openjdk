@@ -369,8 +369,8 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/lib/librmi.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libsaproc.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libsctp.so
-%{_jvmdir}/java-%{major}-openjdk/lib/libsimdsort.so
 %ifarch %{x86_64}
+%{_jvmdir}/java-%{major}-openjdk/lib/libsimdsort.so
 %{_jvmdir}/java-%{major}-openjdk/lib/libjsvml.so
 %endif
 %{_jvmdir}/java-%{major}-openjdk/lib/libsyslookup.so
