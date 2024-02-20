@@ -22,8 +22,8 @@
 %define major %(echo %{version} |cut -d. -f1)
 %define minor %(echo %{version} |cut -d. -f2-3)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define subminor 21
-%define is_head 1
+%define subminor 36
+%define is_head 0
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
 # to determine the previous version to get build dependencies
