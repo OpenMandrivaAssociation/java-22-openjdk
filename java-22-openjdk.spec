@@ -22,8 +22,8 @@
 %define major %(echo %{version} |cut -d. -f1)
 %define minor %(echo %{version} |cut -d. -f2-3)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define subminor 36
-%define is_head 0
+%define subminor 9
+#define is_head 0
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
 # to determine the previous version to get build dependencies
@@ -32,7 +32,7 @@
 %define vercode %(if [ "%{minor}" = "0.0" ]; then echo -n %{major}; else echo -n %{ver}; fi)
 
 Name:		java-22-openjdk
-Version:	22.0.0.%{subminor}
+Version:	22.0.2.%{subminor}
 Release:	1
 Summary:	Java Runtime Environment (JRE) %{major}
 Group:		Development/Languages
